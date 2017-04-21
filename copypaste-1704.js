@@ -74,20 +74,23 @@ var copypaste = {
 		else{
 			var data = '';
 			var keys1 = [];
-			var keys2 = [];
+			var keys2 = [''];
+			var keys3 = [];
 			for(var k1 in obj){keys1.push(k1);}
 			for(f1 = 0; f1 < keys1.length; f1++){
 				var row = obj[keys1[f1]];
 				for(var k2 in row){
-				  if(k2 == key && keys2.indexOf(row[k2])){keys2.push(row[k2]);}
+					if(k2 == key && keys2.indexOf(row[k2]) < 1){keys2.push(row[k2]);}
 				}
 			}
-			for(f3 = 0; f3 < keys2.length; f3++){
-				var temp = model;
-				while(temp.includes('|%|')){
-					temp = temp.split('|%|').join(keys2[f3]);
+			for(f2 = 0; f2 < keys2.length; f2++){
+				if(keys2[f2] !== null || keys2[f2] !== undefined || keys2[f2] !== ''){
+					var temp = model;
+					while(temp.includes('|%|')){
+						temp = temp.split('|%|').join(keys2[f2]);
+					}
+					data+= temp;
 				}
-				data+= temp;
 			}
 			return data;
 		}
