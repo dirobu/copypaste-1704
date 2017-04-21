@@ -96,5 +96,5 @@ var copypaste = {
 			return data;
 		}
 	},
-	'info': function(){console.log('\n\nFunction: copypaste\nDate: 2016-10-01\nBy: dirobu \n\n');}
+	'info': function(){console.log('\n\nFunction: copypaste\nDate: 2017-04-01\nBy: dirobu \n\n');}
 }
