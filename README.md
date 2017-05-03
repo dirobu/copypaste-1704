@@ -45,7 +45,7 @@ copypaste.object(model, str);
 	Have you seen John Dig, they are 41 years old.
 	Have you seen Jane Doe, they are 40 years old.
 
-copypaste.objectOnly(key, only, model, str);
+copypaste.objectOnly(key, value, model, str);
 
 	Script: 
 
