@@ -76,6 +76,6 @@ copypaste.objectUniqueKey(key, model, str);
 
 	Output: 
 
-	Have you seen Doe ? 
-	Have you seen Dig ? 
+	Have you seen Doe? 
+	Have you seen Dig? 
 
